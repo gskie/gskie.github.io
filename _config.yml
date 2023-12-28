@@ -1,18 +1,24 @@
+# The Site Configuration
 domain: gskie.github.io
-baseurl: /REPOSITORY-NAME/
-url: "https://gskie.github.io"
+baseurl: ""
+url: https://gskie.github.io
 
 title: Octocat's homepage
 description: Bookmark this to keep an eye on my project updates!
 
 # Build settings
-markdown: kramdown
-theme: minima
+#theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-timeago
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
   - README.md
+  - LICENSE
+  - rollup.config.js
+  - package*.json
