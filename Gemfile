@@ -9,6 +9,7 @@ gem "jekyll"
 gem "minima"
 
 group :jekyll_plugins do
+    gem "github-pages"
     gem "jekyll-feed", "~> 0.12"
     gem "jekyll-timeago", "~> 0.13.1"
 end
