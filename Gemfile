@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 #gemspec
 
-gem 'jekyll', github: 'jekyll/jekyll'
+gem 'jekyll'
 gem "github-pages", "~> 228", group: :jekyll_plugins
 gem "minima"
 
