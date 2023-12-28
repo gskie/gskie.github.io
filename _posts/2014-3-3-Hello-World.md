@@ -4,7 +4,7 @@ author: Artem Plekhanov
 date: 2023-12-28 11:33:00 +0500
 categories: [Blogging, Demo]
 tags: [typography]
-layout: default
+layout: post
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
