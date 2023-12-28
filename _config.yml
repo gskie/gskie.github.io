@@ -1,24 +1,25 @@
-# The Site Configuration
-domain: gskie.github.io
-baseurl: ""
-url: https://gskie.github.io
+title: Your blog title
+email: your.email@gmail.com
 
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+# many other settings
+# ...
 
-# Build settings
-#theme: minima
-
+# Any plugins within jekyll_plugin group from Gemfile
 plugins:
   - jekyll-feed
-  - jekyll-timeago
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-compose
+  - jekyll-redirect-from
 
+# Exclude these files from the build process results.
+# Prevents them from showing up in the master branch which 
+# is the live site.
 exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - docs
-  - tools
-  - README.md
+  - vendor
+  - Gemfile
+  - Gemfile.lock
   - LICENSE
-  - rollup.config.js
-  - package*.json
+  - README.md
+  - Rakefile
