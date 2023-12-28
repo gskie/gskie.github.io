@@ -16,4 +16,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-compose", "~> 0.5"
   gem "jekyll-redirect-from"
+  gem 'jekyll-timeago'
+  gem 'jekyll-archives'
+  gem 'jekyll-tagging'
 end
