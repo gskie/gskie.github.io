@@ -2,10 +2,10 @@
 
 source "https://rubygems.org"
 
-ruby "3.3.0"
+#ruby "3.3.0"
 
 # gem "rails"
-gem "jekyll"
+gem "jekyll", "~> 4.2"
 gem "minima"
 
 group :jekyll_plugins do
