@@ -1,4 +1,9 @@
-domain: gskie.github.io
-theme: jekyll-theme-minimal
+#domain: gskie.github.io
+#theme: jekyll-theme-minimal
 title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+#description: Bookmark this to keep an eye on my project updates!
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
