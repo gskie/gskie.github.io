@@ -267,7 +267,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  github-pages
+  github-pages (~> 228)
   jekyll-feed
   jekyll-timeago
   minima
