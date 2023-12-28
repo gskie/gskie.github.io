@@ -5,7 +5,7 @@ ruby RUBY_VERSION
 #gem "rake", "~> 12"
 #gem "jekyll"
 
-gem "github-pages", group: :jekyll_plugins
+#gem "github-pages", group: :jekyll_plugins
 
 # Optional: Add any custom plugins here.
 # Some useful examples are listed below
