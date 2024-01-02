@@ -1,4 +1,31 @@
-<article>
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="image/png" sizes="96x96" rel="icon" href="/assets/img/icon.png">
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <script src="/assets/js/spaghetti.js"></script>
+        <title>{{ page.title }}</title>
+    </head>
+    <body class="bg-fixed" style="background-image: url(https://i.artfile.ru/1920x1080_740835_[www.ArtFile.ru].jpg); background-size: cover;">
+        <div class="md:flex h-screen bg-white/30 dark:bg-cyan-950">
+            <div class="md:w-[350px] md:min-w-[200px] backdrop-blur-xl bg-white-700">
+                <div class="pt-12 hidden md:flex justify-center">
+                    <img src="/assets/img/me.jpg" class="rounded-full size-48 border-4 border-black dark:border-purple-200 drop-shadow-lg">
+                </div>
+                <div class="pt-12 pb-12 hidden md:block">
+                    <p class="font-mono text-2xl underline decoration-4 uppercase text-center">Artem Plekhanov</p>
+                    <p class="pt-4 font-mono text-slate-500 uppercase text-center text-wrap">Front-end &amp; Back-end <br> developer</p>
+                </div>
+                {% include navbar.html %}
+                {% include contacts.html %}
+            </div>
+            <main class="w-full backdrop-blur-sm">
+                  <div class="container m-3">
+
+<article class="prose lg:prose-xl">
     {{ content }}
     {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
@@ -9,3 +36,9 @@
   </ul>
 {% endfor %}
 </article>
+
+</div>
+</main>
+</div>
+</body>
+</html>

@@ -1,18 +1,19 @@
 ---
+title: gSKIE - Главная
+page-title: Welcome to My Home Page
 layout: default
 ---
 
-Welcome to My Home Page
-
-{% assign date = '2020-04-13T10:20:00Z' %}
-
-- Original date - {{ date }}
-- With timeago filter - {{ date | timeago }}
+{% include projects.html %}
 
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.annotatio }}</p>
+      {{ post.date | timeago }}
+      <a href="{{ post.url }}">Читать ...</a>
+      
     </li>
   {% endfor %}
 </ul>

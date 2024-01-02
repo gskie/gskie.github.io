@@ -1,11 +1,14 @@
 ---
 title: Text and Typography
+annotatio: Моя первая статья в моем личном блоге на GitHub Pages
 author: Artem Plekhanov
-date: 2023-12-28 11:33:00 +0500
+date: 2024-01-01 11:33:00 +0500
 categories: [Blogging, Demo]
 tags: [typography]
 layout: post
 ---
+
+# {{ page.title }}
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 

@@ -26,6 +26,10 @@ exclude:
   - Rakefile
   - .jekyll-cache/
   - .sass-cache/
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
 
 timezone: Asia/Yekaterinburg
 
