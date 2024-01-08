@@ -34,3 +34,11 @@ exclude:
   - tailwind.config.js
 
 timezone: Asia/Yekaterinburg
+
+pagination: 
+  enabled: true
+
+jekyll_timeago:
+  translations_path: '/lib/timeago/locales.yml'
+  default_locale: 'ru'
+  fallbacks: true
