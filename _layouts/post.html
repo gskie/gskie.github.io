@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scroll-smooth">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,9 @@
         <script src="/assets/js/spaghetti.js"></script>
         <title>{{ page.title }}</title>
     </head>
-    <body class="bg-fixed" style="background-image: url(https://i.artfile.ru/1920x1080_740835_[www.ArtFile.ru].jpg); background-size: cover;">
+    <body class="bg-fixed overflow-hidden" style="background-image: url(/assets/img/bg.jpg); background-size: cover;">
         <div class="md:flex h-screen bg-white/30 dark:bg-cyan-950">
-            <div class="md:w-[350px] md:min-w-[200px] backdrop-blur-xl bg-white-700">
+            <div class="md:w-[350px] md:min-w-[200px] backdrop-blur-xl">
                 <div class="pt-12 hidden md:flex justify-center">
                     <img src="/assets/img/me.jpg" class="rounded-full size-48 border-4 border-black dark:border-purple-200 drop-shadow-lg">
                 </div>
@@ -22,23 +22,18 @@
                 {% include navbar.html %}
                 {% include contacts.html %}
             </div>
-            <main class="w-full backdrop-blur-sm">
-                  <div class="container m-3">
+              <main class="lg:flex w-full overflow-y-auto scrollbar-thin bg-white/30">
+                <div class="overflow-y-auto scrollbar-thin pr-1 lg:w-3/4 backdrop-blur-xl">
 
-<article class="prose lg:prose-xl">
-    {{ content }}
-    {% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endfor %}
-</article>
+                  <article class="prose prose-slate max-w-none m-3">
+                      {{ content }}
+                  </article>
 
-</div>
-</main>
-</div>
-</body>
+                </div>
+                <div class="m-3">
+                    {% include postmenu.html %}
+                </div>
+              </main>
+          </div>
+      </body>
 </html>

@@ -1,22 +1,6 @@
 ---
-title: gSKIE - Главная
-page-title: Welcome to My Home Page
-layout: default
-locale: 'ru'
-pagination: 
-  enabled: true
-  collection: 'posts'
-  per_page: 5
-  permalink: '/page/:num/'
-  title: ':title - Страница :num'
-jekyll_timeago:
-  translations_path: '/lib/timeago/locales.yml'
-  default_locale: 'ru'
-  fallbacks: true
+layout: page
 ---
-
-{% include projects.html %}
-
 {% for post in paginator.posts %}
 <div class="bg-white/30 mb-2">
   <article class="backdrop-blur-xl p-4 flex flex-col items-start justify-between">

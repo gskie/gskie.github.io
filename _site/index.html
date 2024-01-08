@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scroll-smooth">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,9 @@
         <script src="/assets/js/spaghetti.js"></script>
         <title>gSKIE - Главная</title>
     </head>
-    <body class="bg-fixed" style="background-image: url(https://i.artfile.ru/1920x1080_740835_[www.ArtFile.ru].jpg); background-size: cover;">
+    <body class="bg-fixed overflow-hidden" style="background-image: url(/assets/img/bg.jpg); background-size: cover;">
         <div class="md:flex h-screen bg-white/30 dark:bg-cyan-950">
-            <div class="md:w-[350px] md:min-w-[200px] backdrop-blur-xl bg-white-700">
+            <div class="md:w-[350px] md:min-w-[200px] backdrop-blur-xl">
                 <div class="pt-12 hidden md:flex justify-center">
                     <img src="/assets/img/me.jpg" class="rounded-full size-48 border-4 border-black dark:border-purple-200 drop-shadow-lg">
                 </div>
@@ -61,21 +61,102 @@
     <a href="https://boosty.to/gskie/donate" class="py-2 px-3 bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold rounded-md shadow focus:outline-none">ПОДДЕРЖАТЬ</a>
 </div>
             </div>
-            <main class="w-full backdrop-blur-sm">
-                <div class="container m-3">
+            <main class="lg:flex w-full overflow-y-auto scrollbar-thin">
+                <div class="overflow-y-auto scrollbar-thin pr-1 lg:w-3/4 m-3">
                     
-<ul>
-  
-    <li>
-      <h2>Text and Typography</h2>
-      <p>Моя первая статья в моем личном блоге на GitHub Pages</p>
-      2 days ago
-      <a href="/blogging/demo/2024/01/01/Hello-World.html">Читать ...</a>
-      
-    </li>
-  
-</ul>
 
+
+<div class="bg-white/30 mb-2">
+  <article class="backdrop-blur-xl p-4 flex flex-col items-start justify-between">
+    <div class="flex items-center gap-x-4 text-xs">
+      <time datetime="2024-01-01 11:33:00 +0500" class="text-gray-500">неделю назад</time>
+      
+        <div class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600">Blog</div>
+      
+      <p class="text-gray-500">-</p>
+      
+        <a href="/tags/php/" class="rounded-full py-1.5 font-medium text-gray-600 hover:text-gray-900"><i class="fa fa-hashtag" aria-hidden="true"></i> php</a>
+      
+    </div>
+        <div class="group relative">
+          <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+            <a href="/blog/2024/01/01/Hello-World.html">
+              <span class="absolute inset-0"></span>
+              Введение в язык программирования PHP - основные принципы и возможности
+            </a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Статья представляет собой обзор основных концепций и возможностей языка программирования PHP. В статье освещаются основные принципы работы с переменными, функциями, условными операторами, циклами, массивами и объектами в PHP. Рассматривается также использование баз данных, работа с формами и файлами, а также основные инструменты для отладки и оптимизации PHP-приложений. Эта статья предназначена как для начинающих разработчиков, так и для опытных специалистов, желающих освежить свои знания о языке PHP и узнать о его современных возможностях.</p>
+        </div>
+  </article>
+</div>
+
+<div class="bg-white/30 mb-2">
+  <article class="backdrop-blur-xl p-4 flex flex-col items-start justify-between">
+    <div class="flex items-center gap-x-4 text-xs">
+      <time datetime="2024-01-01 11:33:00 +0500" class="text-gray-500">неделю назад</time>
+      
+        <div class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600">Blog</div>
+      
+      <p class="text-gray-500">-</p>
+      
+        <a href="/tags/php/" class="rounded-full py-1.5 font-medium text-gray-600 hover:text-gray-900"><i class="fa fa-hashtag" aria-hidden="true"></i> php</a>
+      
+    </div>
+        <div class="group relative">
+          <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+            <a href="/blog/2024/01/01/Hello-World-copy.html">
+              <span class="absolute inset-0"></span>
+              Введение в язык программирования PHP - основные принципы и возможности
+            </a>
+          </h3>
+          <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Статья представляет собой обзор основных концепций и возможностей языка программирования PHP. В статье освещаются основные принципы работы с переменными, функциями, условными операторами, циклами, массивами и объектами в PHP. Рассматривается также использование баз данных, работа с формами и файлами, а также основные инструменты для отладки и оптимизации PHP-приложений. Эта статья предназначена как для начинающих разработчиков, так и для опытных специалистов, желающих освежить свои знания о языке PHP и узнать о его современных возможностях.</p>
+        </div>
+  </article>
+</div>
+
+
+<!-- Pagination links -->
+<div class="flex items-center justify-between bg-white/30 backdrop-blur-xl mb-2 px-4 py-3 lg:px-6">
+  <div class="flex flex-1 justify-between lg:hidden">
+    <a href="" class="relative inline-flex items-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Предыдущий</a>
+    <a href="" class="relative ml-3 inline-flex items-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Далее</a>
+  </div>
+  <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-between">
+    <div>
+      <p class="text-sm text-gray-700">
+        Страница
+        <span class="font-medium">1</span>
+        из
+        <span class="font-medium">1</span>
+      </p>
+    </div>
+    <div>
+      <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+      
+        <div class="backdrop-blur-xl relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-700 focus:z-20 focus:outline-offset-0">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp; Предыдущий
+        </div>
+      
+      
+        <div class="backdrop-blur-xl relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-700 focus:z-20 focus:outline-offset-0">
+        Далее &nbsp; <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      
+      </nav>
+    </div>
+  </div>
+</div>
+                </div>
+                <div class="m-3">
+                    <div class="max-h-[350px] backdrop-blur-xl p-4 flex flex-row flex-wrap items-start justify-between overflow-y-auto scrollbar-thin">
+    
+    <div class="mx-1 my-1">
+        <a href="/tags/php/" class="rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+            <i class="fa fa-hashtag" aria-hidden="true"></i> php
+        </a>
+    </div>
+    
+</div>
                 </div>
             </main>
         </div>

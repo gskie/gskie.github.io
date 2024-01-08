@@ -2,7 +2,7 @@ domain: gskie.github.io       # if you want to force HTTPS, specify the domain w
 url: https://gskie.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: ""
 
-title: Your blog title
+title: GSkie
 email: your.email@gmail.com
 
 # many other settings
@@ -16,6 +16,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-compose
   - jekyll-redirect-from
+  - jekyll-timeago
+  - jekyll-paginate
 
 exclude:
   - vendor
@@ -32,4 +34,3 @@ exclude:
   - tailwind.config.js
 
 timezone: Asia/Yekaterinburg
-

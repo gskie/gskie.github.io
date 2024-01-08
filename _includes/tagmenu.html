@@ -1,0 +1,9 @@
+<div class="max-h-[350px] backdrop-blur-xl p-4 flex flex-row flex-wrap items-start justify-between overflow-y-auto scrollbar-thin">
+    {% for tag in site.tags %}
+    <div class="mx-1 my-1">
+        <a href="/tags/{{ tag[0] }}/" class="rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+            <i class="fa fa-hashtag" aria-hidden="true"></i> {{ tag[0] }}
+        </a>
+    </div>
+    {% endfor %}
+</div>
